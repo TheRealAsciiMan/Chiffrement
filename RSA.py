@@ -43,5 +43,3 @@ decrypted = dechiffrement(crypted, p, q, n, e)
 print(decrypted)
 original_decrypted = fig_to_car(decrypted)
 print(original_decrypted)
-
-fig_to_car("00")
