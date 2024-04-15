@@ -9,6 +9,7 @@ def codage_binaire(message, cle):
         resultat_binaire = ""
         for j in range(8):
             resultat_binaire += str(int(binaire_message[j]) ^ int(binaire_cle[j]))
+
         resultat += chr(int(resultat_binaire, 2))
     return resultat
 
