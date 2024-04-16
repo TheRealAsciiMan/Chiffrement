@@ -45,7 +45,7 @@ def bin_encoded_to_text(message, cle):
     return resultat
 
 
-original = "Bonjour !"
+original = "https://www.speedrun.com/AsciiMan"
 print(original)
 key = "LUL"
 result = codage_binaire(original, key)
@@ -53,7 +53,7 @@ print(result)
 disc_original = codage_binaire(result, key)
 print(disc_original)
 
-original = "Bonjour !"
+original = "https://www.speedrun.com/AsciiMan"
 print("\n"+original)
 key = "LUL"
 result = text_to_bin_encoded(original, key)
