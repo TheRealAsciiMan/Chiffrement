@@ -45,7 +45,7 @@ def bin_encoded_to_text(message, cle):
     return resultat
 
 
-original = "fghdfgjdfh,kfghjdfhjfghj1234àç)_(é"' lqh*^$*µ£^^¤'
+original = "Bonjour !"
 print(original)
 key = "LUL"
 result = codage_binaire(original, key)
