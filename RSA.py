@@ -19,7 +19,7 @@ def chiffrement(suite_chiffres, n, e):
     numbers_encrypted = []
     for bloc in suite_chiffres:
         entier = int(bloc)
-        number_encrypted = (entier**e) % n
+        number_encrypted = pow(entier, e, n)
         numbers_encrypted.append(number_encrypted)
     return numbers_encrypted
 
@@ -37,9 +37,9 @@ p, q, e, n = 53, 97, 7, 5141
 print(original)
 original_numbers = car_to_fig(original)
 print(original_numbers)
-crypted = chiffrement(original_numbers, n, e)
-print(crypted)
-decrypted = dechiffrement(crypted, p, q, n, e)
+encrypted = chiffrement(original_numbers, n, e)
+print(encrypted)
+decrypted = dechiffrement(encrypted, p, q, n, e)
 print(decrypted)
 original_decrypted = fig_to_car(decrypted)
 print(original_decrypted)
